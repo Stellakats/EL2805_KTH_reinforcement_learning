@@ -7,6 +7,8 @@ from collections import deque
 from keras.layers import Dense
 from keras.optimizers import Adam
 from keras.models import Sequential
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 EPISODES = 1000 #Maximum number of episodes
 
@@ -15,8 +17,8 @@ EPISODES = 1000 #Maximum number of episodes
 class DQNAgent:
     #Constructor for the agent (invoked when DQN is first called in main)
     def __init__(self, state_size, action_size):
-        self.check_solve = False	#If True, stop if you satisfy solution confition
-        self.render = False        #If you want to see Cartpole learning, then change to True
+        self.check_solve = False    #If True, stop if you satisfy solution confition
+        self.render = True        #If you want to see Cartpole learning, then change to True
 
         #Get size of state and action
         self.state_size = state_size
@@ -75,7 +77,12 @@ class DQNAgent:
         #Insert your e-greedy policy code here
         #Tip 1: Use the random package to generate a random action.
         #Tip 2: Use keras.model.predict() to compute Q-values from the state.
-        action = random.randrange(self.action_size)
+        random_int = np.random.binomial(1, (1 - self.epsilon))
+        if random_int == 1:
+            qs = self.model.predict(state) #model is going to give me two q values, one for each action that can be taken from state.
+            action = np.argmax(qs)
+        elif random_int == 0:
+            action = random.randrange(self.action_size)
         return action
 ###############################################################################
 ###############################################################################
@@ -111,7 +118,10 @@ class DQNAgent:
         #Tip 1: Observe that the Q-values are stored in the variable target
         #Tip 2: What is the Q-value of the action taken at the last state of the episode?
         for i in range(self.batch_size): #For every batch
-            target[i][action[i]] = random.randint(0,1)
+            if done[i]:
+                target[i][action[i]] = reward[i]
+            else:
+                target[i][action[i]] = reward[i] + self.discount_factor * (np.max(target_val[i]))
 ###############################################################################
 ###############################################################################
 
@@ -119,6 +129,8 @@ class DQNAgent:
         self.model.fit(update_input, target, batch_size=self.batch_size,
                        epochs=1, verbose=0)
         return
+
+
     #Plots the score per episode as well as the maximum q value per episode, averaged over precollected states.
     def plot_data(self, episodes, scores, max_q_mean):
         pylab.figure(0)
@@ -132,6 +144,7 @@ class DQNAgent:
         pylab.xlabel("Episodes")
         pylab.ylabel("Score")
         pylab.savefig("scores.png")
+        pylab.show()
 
 ###############################################################################
 ###############################################################################
@@ -146,6 +159,7 @@ if __name__ == "__main__":
     #Create agent, see the DQNAgent __init__ method for details
     agent = DQNAgent(state_size, action_size)
 
+
     #Collect test states for plotting Q values using uniform random policy
     test_states = np.zeros((agent.test_state_no, state_size))
     max_q = np.zeros((EPISODES, agent.test_state_no))
@@ -159,8 +173,8 @@ if __name__ == "__main__":
             state = np.reshape(state, [1, state_size])
             test_states[i] = state
         else:
-            action = random.randrange(action_size)
-            next_state, reward, done, info = env.step(action)
+            action = random.randrange(action_size)  # choose a random action out of the two
+            next_state, reward, done, info = env.step(action)  #
             next_state = np.reshape(next_state, [1, state_size])
             test_states[i] = state
             state = next_state
@@ -210,4 +224,6 @@ if __name__ == "__main__":
                         print("solved after", e-100, "episodes")
                         agent.plot_data(episodes,scores,max_q_mean[:e+1])
                         sys.exit()
-    agent.plot_data(episodes,scores,max_q_mean)
+    agent.plot_data(episodes, scores, max_q_mean)
+
+   

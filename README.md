@@ -42,7 +42,7 @@ experiments for question (h):
 |100| 3layers of 128 100 64  | Stella | the total average is [0.46099559]  |
 | 500| 3layers of 128 100 64  | Deepika | the total average is [-0.14993168] |
 | 2000| 3layers of 128 100 64  | Stella | the total average is [90.33397961]   |
-| 5000| 3layers of 128 100 64   | Deepika | Content Cell  |
+| 5000| 3layers of 128 100 64   | Deepika | the total average is [106.68559647]  |
 
 
 

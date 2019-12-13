@@ -53,6 +53,6 @@ experiments for question (i):
 | -------------| -------------| 
 | 2| the total average is [81.58922079]  | 
 | 5| Content Cell  | 
-| 20|  Content Cell  | 
+| 20|  the total average is [21.00435967] | 
 
 

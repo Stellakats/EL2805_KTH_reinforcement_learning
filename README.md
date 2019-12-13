@@ -52,7 +52,7 @@ experiments for question (i):
 | frequency |  Result  |  
 | -------------| -------------| 
 | 2| the total average is [81.58922079]  | 
-| 5| Content Cell  | 
+| 5| the total average is [57.15229549]  | 
 | 20|  the total average is [21.00435967] | 
 
 

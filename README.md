@@ -28,7 +28,7 @@ experiments for question (h):
 | 0.5| 1x64   | Stella  | the total average is [1.78726891]  |
 | 0.99| 1x64   | Stella | the total average is [86.15308617]  |
 | 0.5| 3layers of 128 100 64  | Deepika | the total average is [1.78446936]  |
-| 0.99| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 0.99| 3layers of 128 100 64  | Deepika | the total average is [99.4431931]  |
 
 | learning rate| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|

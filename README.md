@@ -16,7 +16,8 @@ experiments for question (g): &nbsp;
 | 8|            3layer  20,16,13 nodes | Deepika  | the total average is [17.76393154]|
 | 9|3layers of 32 16 and 8 nodes| Stella  | the total average is [17.66173578]  |
 | 10| 3layers of 64 48 32  | Deepika  |  the total average is [18.55814505]  |
-| 11| 4layers of 64,32,16,8 nodes  | Deepika  |  the total average is [16.90687171]  |
+| 11| 3layers of 128 100 64  | Deepika  |   |
+| 12| 4layers of 64,32,16,8 nodes  | Deepika  |  the total average is [16.90687171]  |
 | -------------| Content Cell  | Content Cell  |  Cell  |
 | -------------| Content Cell  | Content Cell  |  Cell  |
 | -------------| Content Cell  | Content Cell  |  Cell  |

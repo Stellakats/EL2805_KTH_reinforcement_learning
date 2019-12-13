@@ -18,13 +18,41 @@ experiments for question (g): &nbsp;
 | 10| 3layers of 64 48 32  | Deepika  |  the total average is [18.55814505]  |
 | 11| 3layers of 128 100 64  | Deepika  | the total average is [18.69447713]  |
 | 12| 4layers of 64,32,16,8 nodes  | Deepika  |  the total average is [16.90687171]  |
-| -------------| Content Cell  | Content Cell  |  Cell  |
-| -------------| Content Cell  | Content Cell  |  Cell  |
-| -------------| Content Cell  | Content Cell  |  Cell  |
-
 
   
 experiments for question (h):
+
+| discount factor| Model | Who  | Result  |
+|  ------------- | -------------| -------------| -------------|
+|0.1|1x64  | Stella | the total average is [1.04702895]   |
+| 0.5| 1x64   | Stella  | the total average is [1.78726891]  |
+| 0.99| 1x64   | Stella | Content Cell  |
+|0.1| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 0.5| 3layers of 128 100 64  | Deepika | the total average is [1.78446936]  |
+| 0.99| 3layers of 128 100 64  | Deepika | Content Cell  |
+
+| learning rate| Model | Who  | Result  |
+|  ------------- | -------------| -------------| -------------|
+|0.001|1x64  | Deepika | Content Cell  |
+| 0.01| 1x64   | Deepika  | Content Cell  |
+| 0.1| 1x64   | Deepika | Content Cell  |
+|0.001| 3layers of 128 100 64  | Stella | Content Cell  |
+| 0.01| 3layers of 128 100 64  | Stella | Content Cell  |
+| 0.1| 3layers of 128 100 64  | Stella | Content Cell  |
+
+| memory| Model | Who  | Result  |
+|  ------------- | -------------| -------------| -------------|
+|100|1x64  | Stella | Content Cell  |
+| 500| 1x64   | Stella  | Content Cell  |
+| 2000| 1x64   | Stella | Content Cell  |
+| 5000| 1x64   | Stella | Content Cell  |
+|100| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 500| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 2000| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 5000| 3layers of 128 100 64   | Stella | Content Cell  |
+
+
+
 experiments for question (i):
 experiments for question (j):
 

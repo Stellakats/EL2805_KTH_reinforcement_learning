@@ -47,25 +47,12 @@ experiments for question (h):
 
 
 experiments for question (i):
-experiments for question (j):
 
 
-| #| Experiment | Who  | Result  |
-| -------------| -------------| -------------| -------------|
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
-| -------------| Content Cell  | Content Cell  | Content Cell  |
+| frequency | Who | Result  |  
+| -------------| -------------| -------------| 
+| 2| Stella | Content Cell  | 
+| 5| Deepika  | Content Cell  | 
+| 20| Stella | Content Cell  | 
 
 

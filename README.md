@@ -9,7 +9,7 @@ experiments for question (g): &nbsp;
 |1st|            1layer 16 nodes  | Stella  | the total average is [17.00132879]  |
 | 2nd|              1layer 8 nodes| Deepika | the total average is [17.45639793]  |
 | 3rd|            1layer 32 nodes | Stella  | the total average is [18.02162986] |
-| 4th|            1layer 64 nodes | Stella  | the total average is |
+| 4th|            1layer 64 nodes | Stella  | the total average is [18.79226266]Th|
 | 5th|            1layer 5 nodes | Stella  | the total average is |
 | 6th|            3layer  20,16,13 nodes | Deepika  | the total average is |
 | 7th|  2layers of 16 and 8 nodes | Deepika | the total average is [17.66166594]  |

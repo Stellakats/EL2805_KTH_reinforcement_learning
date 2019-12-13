@@ -27,25 +27,17 @@ experiments for question (h):
 |0.1|1x64  | Stella | the total average is [1.04702895]   |
 | 0.5| 1x64   | Stella  | the total average is [1.78726891]  |
 | 0.99| 1x64   | Stella | Content Cell  |
-|0.1| 3layers of 128 100 64  | Deepika | Content Cell  |
 | 0.5| 3layers of 128 100 64  | Deepika | the total average is [1.78446936]  |
 | 0.99| 3layers of 128 100 64  | Deepika | Content Cell  |
 
 | learning rate| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
-|0.001|1x64  | Deepika | Content Cell  |
-| 0.01| 1x64   | Deepika  | Content Cell  |
-| 0.1| 1x64   | Deepika | Content Cell  |
 |0.001| 3layers of 128 100 64  | Stella | Content Cell  |
 | 0.01| 3layers of 128 100 64  | Stella | Content Cell  |
 | 0.1| 3layers of 128 100 64  | Stella | Content Cell  |
 
 | memory| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
-|100|1x64  | Stella | Content Cell  |
-| 500| 1x64   | Stella  | Content Cell  |
-| 2000| 1x64   | Stella | Content Cell  |
-| 5000| 1x64   | Stella | Content Cell  |
 |100| 3layers of 128 100 64  | Deepika | Content Cell  |
 | 500| 3layers of 128 100 64  | Deepika | Content Cell  |
 | 2000| 3layers of 128 100 64  | Deepika | Content Cell  |

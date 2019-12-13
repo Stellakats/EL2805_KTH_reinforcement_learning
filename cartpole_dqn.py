@@ -13,7 +13,7 @@ import matplotlib.gridspec as gridspec
 EPISODES = 1000 #Maximum number of episodes
 
 #change here first
-EXPERIMENT = "1_layer_32_nodes"
+EXPERIMENT = "lr_0_01_discount_0_99"
 
 #DQN Agent for the Cartpole
 #Q function approximation with NN, experience replay, and target network
@@ -30,8 +30,8 @@ class DQNAgent:
        # Modify here
 
         #Set hyper parameters for the DQN. Do not adjust those labeled as Fixed.
-        self.discount_factor = 0.95
-        self.learning_rate = 0.005
+        self.discount_factor = 0.99
+        self.learning_rate = 0.01
         self.epsilon = 0.02 #Fixed
         self.batch_size = 32 #Fixed
         self.memory_size = 1000
@@ -59,12 +59,12 @@ class DQNAgent:
         #Tip: Consult https://keras.io/getting-started/sequential-model-guide/
     def build_model(self):
         model = Sequential()
-        model.add(Dense(32, input_dim=self.state_size, activation='relu',
+        model.add(Dense(128, input_dim=self.state_size, activation='relu',
                         kernel_initializer='he_uniform'))
-        #model.add(Dense(16, activation='relu',
-        #                kernel_initializer='he_uniform'))
-        #model.add(Dense(8, activation='relu',
-        #                kernel_initializer='he_uniform'))
+        model.add(Dense(100, activation='relu',
+                        kernel_initializer='he_uniform'))
+        model.add(Dense(64, activation='relu',
+                        kernel_initializer='he_uniform'))
         model.add(Dense(self.action_size, activation='linear',
                         kernel_initializer='he_uniform'))
         model.summary()
@@ -200,7 +200,6 @@ if __name__ == "__main__":
         total_average += max_q_mean[e]
 
 
-
         while not done:
             if agent.render:
                 env.render() #Show cartpole animation
@@ -237,7 +236,7 @@ if __name__ == "__main__":
                         sys.exit()
 
 
-    print(f'the total average is {total_average/EPISODES} for 32 nodes')
+    print(f'the total average is {total_average/EPISODES} for {EXPERIMENT}')
     agent.plot_data(episodes, scores, max_q_mean)
 
 

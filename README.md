@@ -24,7 +24,7 @@ experiments for question (h):
 
 | discount factor| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
-|0.1|1x64  | Stella | Content Cell  |
+|0.1|1x64  | Stella | the total average is [1.04702895]   |
 | 0.5| 1x64   | Stella  | the total average is [1.78726891]  |
 | 0.99| 1x64   | Stella | Content Cell  |
 |0.1| 3layers of 128 100 64  | Deepika | Content Cell  |

@@ -40,7 +40,7 @@ experiments for question (h):
 | memory| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
 |100| 3layers of 128 100 64  | Stella | Content Cell  |
-| 500| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 500| 3layers of 128 100 64  | Deepika | the total average is [-0.14993168] |
 | 2000| 3layers of 128 100 64  | Stella | Content Cell  |
 | 5000| 3layers of 128 100 64   | Stella | Content Cell  |
 

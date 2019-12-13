@@ -33,14 +33,15 @@ experiments for question (h):
 | learning rate| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
 |0.001| 3layers of 128 100 64  | Stella | Content Cell  |
+|0.005| 3layers of 128 100 64  | Deepika | Content Cell  |
 | 0.01| 3layers of 128 100 64  | Stella | Content Cell  |
-| 0.1| 3layers of 128 100 64  | Stella | Content Cell  |
+| 0.1| 3layers of 128 100 64  | Deepika | Content Cell  |
 
 | memory| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
-|100| 3layers of 128 100 64  | Deepika | Content Cell  |
+|100| 3layers of 128 100 64  | Stella | Content Cell  |
 | 500| 3layers of 128 100 64  | Deepika | Content Cell  |
-| 2000| 3layers of 128 100 64  | Deepika | Content Cell  |
+| 2000| 3layers of 128 100 64  | Stella | Content Cell  |
 | 5000| 3layers of 128 100 64   | Stella | Content Cell  |
 
 

@@ -51,7 +51,7 @@ experiments for question (i):
 
 | frequency | Who | Result  |  
 | -------------| -------------| -------------| 
-| 2| Stella | Content Cell  | 
+| 2| Stella | the total average is [81.58922079]  | 
 | 5| Deepika  | Content Cell  | 
 | 20| Stella | Content Cell  | 
 

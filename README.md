@@ -33,7 +33,7 @@ experiments for question (h):
 | learning rate| Model | Who  | Result  |
 |  ------------- | -------------| -------------| -------------|
 |0.001| 3layers of 128 100 64  | Stella | Content Cell  |
-|0.005| 3layers of 128 100 64  | Deepika | Content Cell  |
+|0.005| 3layers of 128 100 64  | Deepika | the total average is [99.4431931]  |
 | 0.01| 3layers of 128 100 64  | Stella | Content Cell  |
 | 0.1| 3layers of 128 100 64  | Deepika | Content Cell  |
 

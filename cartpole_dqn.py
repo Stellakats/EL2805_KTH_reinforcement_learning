@@ -13,7 +13,7 @@ import matplotlib.gridspec as gridspec
 EPISODES = 1000 #Maximum number of episodes
 
 #change here first
-EXPERIMENT = "lr_0_01_discount_0_99"
+EXPERIMENT = "lr_0_001_memory_2000_discount_0_99_326416"
 
 #DQN Agent for the Cartpole
 #Q function approximation with NN, experience replay, and target network
@@ -31,10 +31,10 @@ class DQNAgent:
 
         #Set hyper parameters for the DQN. Do not adjust those labeled as Fixed.
         self.discount_factor = 0.99
-        self.learning_rate = 0.01
+        self.learning_rate = 0.001
         self.epsilon = 0.02 #Fixed
         self.batch_size = 32 #Fixed
-        self.memory_size = 1000
+        self.memory_size = 2000
         self.train_start = 1000 #Fixed
         self.target_update_frequency = 1
 
@@ -59,11 +59,11 @@ class DQNAgent:
         #Tip: Consult https://keras.io/getting-started/sequential-model-guide/
     def build_model(self):
         model = Sequential()
-        model.add(Dense(128, input_dim=self.state_size, activation='relu',
-                        kernel_initializer='he_uniform'))
-        model.add(Dense(100, activation='relu',
+        model.add(Dense(32, input_dim=self.state_size, activation='relu',
                         kernel_initializer='he_uniform'))
         model.add(Dense(64, activation='relu',
+                        kernel_initializer='he_uniform'))
+        model.add(Dense(16, activation='relu',
                         kernel_initializer='he_uniform'))
         model.add(Dense(self.action_size, activation='linear',
                         kernel_initializer='he_uniform'))

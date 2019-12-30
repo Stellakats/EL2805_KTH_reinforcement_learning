@@ -1,5 +1,5 @@
 # EL2805_KTH_reinforcement_learning
-KTH reinforcement learning course lab 2 
+KTH reinforcement learning course labs 
 
 experiments for question (g): &nbsp;  
 

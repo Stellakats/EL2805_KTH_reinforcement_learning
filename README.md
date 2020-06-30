@@ -1,5 +1,8 @@
 # EL2805_KTH_reinforcement_learning
-KTH reinforcement learning course labs 
+KTH reinforcement learning course labs:
+* Lab1: Create an agent that solves a maze problem by  by modelling it as a Markov Decision Property Task and using Policy Iteration 
+* Lab2: Apply  deep  reinforcement  learning  to  solve  the  popular  cartpole  problem in classic control theory.
+   
 
 experiments for question (g): &nbsp;  
 
